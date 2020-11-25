@@ -10,8 +10,11 @@ import Ships from "./Ships";
 const Pages = () => {
   return (
     <Router>
-      <Route path="/">
-        <Redirect to="/ships" />
+      <Route exact path="/">
+        {/*
+            Wihout "/ships/:shipID" user will be redirected to path "/ships" when refreshing from path "/ships/:someShipID"
+          */}
+        <Redirect to={["/ships", "/ships/:shipID"]} />
       </Route>
 
       <Route path="/ships">

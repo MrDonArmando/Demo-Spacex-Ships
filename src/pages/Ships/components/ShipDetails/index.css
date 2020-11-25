@@ -1,0 +1,26 @@
+.ship-details-list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.ship-detail {
+  width: 100%;
+  height: auto;
+  padding: 8px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ship-detail--even {
+  background-color: lightgray;
+}
+
+.ship-image {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
