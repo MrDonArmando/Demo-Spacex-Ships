@@ -11,10 +11,7 @@ const Pages = () => {
   return (
     <Router>
       <Route exact path="/">
-        {/*
-            Wihout "/ships/:shipID" user will be redirected to path "/ships" when refreshing from path "/ships/:someShipID"
-          */}
-        <Redirect to={["/ships", "/ships/:shipID"]} />
+        <Redirect to="/ships" />
       </Route>
 
       <Route path="/ships">
